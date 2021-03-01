@@ -20,7 +20,7 @@ namespace POC_TratamentoErro
             EventGridEvent[] eventGridEvent = new EventGridEvent[3];
 
             //ToDo: Colocar em um arquivo de configuração ou variável de ambiente
-            String _configuration = "";
+            String _configuration = "colocar o connection String do Storage Account";
 
             try
             {
@@ -52,6 +52,7 @@ namespace POC_TratamentoErro
 
         }
 
+        //ToDo: tranformar método em uma common (para todas as controllers) ou um nugget para todos os projetos.
         public static bool TryParse<T>(string input, out T obj)
         {
             bool result = true;
